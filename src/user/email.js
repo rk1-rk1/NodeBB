@@ -2,6 +2,7 @@
 'use strict';
 
 var nconf = require('nconf');
+var winston = require('winston');
 
 var user = require('./index');
 var utils = require('../utils');
@@ -82,7 +83,7 @@ UserEmail.sendValidationEmail = async function (uid, options) {
 	if (plugins.hooks.hasListeners('action:user.verify')) {
 		plugins.hooks.fire('action:user.verify', { uid: uid, data: data });
 	} else {
-		await emailer.send(data.template, uid, data);
+		await emailer.send(data.template, uid, data).catch(err => winston.error('[emailer.send] ' + err.stack));
 	}
 	return confirm_code;
 };
