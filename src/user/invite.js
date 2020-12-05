@@ -4,6 +4,7 @@
 var async = require('async');
 var nconf = require('nconf');
 var validator = require('validator');
+var winston = require('winston');
 
 var db = require('../database');
 var meta = require('../meta');
@@ -50,7 +51,7 @@ module.exports = function (User) {
 
 		const data = await prepareInvitation(uid, email, groupsToJoin);
 
-		await emailer.sendToEmail('invitation', email, meta.config.defaultLang, data);
+		await emailer.sendToEmail('invitation', email, meta.config.defaultLang, data).catch(err => winston.error('[emailer.send] ' + err.stack));
 	};
 
 	User.verifyInvitation = async function (query) {
