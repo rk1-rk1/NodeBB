@@ -23,7 +23,7 @@ define('admin/settings/email', ['ace/ace', 'admin/settings'], function (ace) {
 			socket.emit('admin.email.test', { template: $('#test-email').val() }, function (err) {
 				if (err) {
 					console.error(err.message);
-					return app.alertError(err.message.slice(0, 300));
+					return app.alertError(err.message);
 				}
 				app.alertSuccess('Test Email Sent');
 			});
