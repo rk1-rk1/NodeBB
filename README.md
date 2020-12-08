@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/NodeBB/NodeBB/badge.svg?branch=master)](https://coveralls.io/github/NodeBB/NodeBB?branch=master)
 [![Dependency Status](https://david-dm.org/nodebb/nodebb.svg?path=install)](https://david-dm.org/nodebb/nodebb?path=install)
 [![Code Climate](https://codeclimate.com/github/NodeBB/NodeBB/badges/gpa.svg)](https://codeclimate.com/github/NodeBB/NodeBB)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frk1-rk1%2FNodeBB.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frk1-rk1%2FNodeBB?ref=badge_shield)
 
 [**NodeBB Forum Software**](https://nodebb.org) is powered by Node.js and supports either Redis, MongoDB, or a PostgreSQL database. It utilizes web sockets for instant interactions and real-time notifications. NodeBB has many modern features out of the box such as social network integration and streaming discussions, while still making sure to be compatible with older browsers.
 
@@ -78,3 +79,6 @@ Detailed upgrade instructions are listed in [Upgrading NodeBB](https://docs.node
 NodeBB is licensed under the **GNU General Public License v3 (GPL-3)** (http://www.gnu.org/copyleft/gpl.html).
 
 Interested in a sublicense agreement for use of NodeBB in a non-free/restrictive environment? Contact us at sales@nodebb.org.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frk1-rk1%2FNodeBB.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frk1-rk1%2FNodeBB?ref=badge_large)
